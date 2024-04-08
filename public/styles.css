@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    width: 80%;
+    max-width: 960px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #0d1243;
+}
+
+#pyramidContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pyramid-row {
+    display: grid;
+    gap: 10px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.pyramid-slot {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #0d1243;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.pyramid-slot:hover {
+    background-color: #e1e1e1;  /* Highlight slots on hover for better interaction visibility */
+}
+
+#fratList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Wrap items for better responsiveness */
+}
+
+#fratList li {
+    padding: 8px 16px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    cursor: grab;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px; /* Rounded corners for better aesthetics */
+}
+
+#fratList li:hover {
+    background-color: #ccc; /* Change background on hover for better user feedback */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Puts space between the two buttons */
+    align-items: center; /* Aligns buttons vertically */
+    padding: 0 10%; /* Adjust padding as needed */
+    width: 100%;
+}
+
+#resetButton, #submitButton {
+    padding:10px 20px; /* Uniform padding inside the buttons */
+    width: 80px; /* Set a fixed width for both buttons */
+    height: 40px; /* Set a fixed height for both buttons */
+    background-color: #121e35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center; /* Ensures text is centered */
+    line-height: 20px; /* Adjust line height to vertically center the text inside */
+}
+
+#resetButton:hover, #submitButton:hover {
+    background-color: #0e1726; /* Slightly darker on hover for a subtle effect */
+}

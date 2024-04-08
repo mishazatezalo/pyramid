@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pyraMID</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>psu frat pyraMID</h1>
+    <div class="button-container">
+        <button id="resetButton">reset</button>
+        <button id="submitButton">submit</button>
+    </div>
+    
+    <div id="pyramidContainer">
+        <!-- Empty slots in a pyramid shape with 10 slots -->
+        <div class="pyramid-row" style="grid-template-columns: repeat(1, 1fr);">
+            <div class="pyramid-slot" data-position="1"></div>
+        </div>
+        <div class="pyramid-row" style="grid-template-columns: repeat(2, 1fr);">
+            <div class="pyramid-slot" data-position="2"></div>
+            <div class="pyramid-slot" data-position="3"></div>
+        </div>
+        <div class="pyramid-row" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="pyramid-slot" data-position="4"></div>
+            <div class="pyramid-slot" data-position="5"></div>
+            <div class="pyramid-slot" data-position="6"></div>
+        </div>
+        <div class="pyramid-row" style="grid-template-columns: repeat(4, 1fr);">
+            <div class="pyramid-slot" data-position="7"></div>
+            <div class="pyramid-slot" data-position="8"></div>
+            <div class="pyramid-slot" data-position="9"></div>
+            <div class="pyramid-slot" data-position="10"></div>
+        </div>
+    </div>
+    <ul id="fratList">
+        <!-- List of draggable items -->
+        <li id="frat1" draggable="true">acacia</li>
+        <li id="frat2" draggable="true">ΑΧΡ</li>
+        <li id="frat3" draggable="true">ADP</li>
+        <li id="frat4" draggable="true">AEPI</li>
+        <li id="frat5" draggable="true">AGR</li>
+        <li id="frat6" draggable="true">AKL</li>
+        <li id="frat7" draggable="true">ΑΦΑ</li>
+        <li id="frat8" draggable="true">APD</li>
+        <li id="frat9" draggable="true">alpha sig</li>
+        <li id="frat10" draggable="true">ΑΤΩ</li>
+        <li id="frat11" draggable="true">BSB</li>
+        <li id="frat12" draggable="true">chi phi</li>
+        <li id="frat13" draggable="true">delta chi</li>
+        <li id="frat14" draggable="true">d sig</li>
+        <li id="frat15" draggable="true">DU</li>
+        <li id="frat21" draggable="true">far sig</li>
+        <li id="frat17" draggable="true">fiji</li>
+        <li id="frat16" draggable="true">lambda</li>
+        <li id="frat18" draggable="true">phi psi</li>
+        <li id="frat19" draggable="true">phi tau</li>
+        <li id="frat20" draggable="true">phi who</li>
+        <li id="frat22" draggable="true">pi kapp</li>
+        <li id="frat23" draggable="true">pike</li>
+        <li id="frat24" draggable="true">SAE</li>
+        <li id="frat25" draggable="true">sig chi</li>
+        <li id="frat26" draggable="true">sig ep</li>
+        <li id="frat27" draggable="true">sigma pi</li>
+        <li id="frat28" draggable="true">skulls</li>
+        <li id="frat29" draggable="true">TEP</li>
+        <li id="frat30" draggable="true">TKE</li>
+        <li id="frat31" draggable="true">triangle</li>
+        <li id="frat32" draggable="true">TDX</li>
+        <li id="frat33" draggable="true">ZBT</li>
+        <!-- Add other fraternities -->
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
